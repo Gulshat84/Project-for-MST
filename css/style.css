@@ -1,4 +1,4 @@
-/*Обнуление CSS стилей*/
+/*------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -92,17 +92,16 @@ h6 {
 
 @font-face {
     font-family: 'Prata';    
-    src: local('Prata Regular'), local('Prata-Regular'),        
+    src: /*local('Prata Regular'), local('Prata-Regular'), */       
         url('../fonts/Prata-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Prata', serif;
     color: #D5C9BE;
-    background-color: #282829;
-    
+    background-color: #282829;    
 }
 
 header {
@@ -111,7 +110,15 @@ header {
     left: 0;
     z-index: 10;
     position: fixed;
+    
 }
+.header {
+    transition: background-color 0.3s;
+}
+.header.scrolled {
+    background-color: #222222;
+}
+
 
 .header-container {
     max-width: 1920px;
@@ -132,6 +139,7 @@ nav {
 
 .nav-link {
     color: #FFFFFF;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -149,8 +157,107 @@ nav {
     max-width: 1920px;
     min-height: 1009px;
     display: flex;
+    justify-content: space-between;
     margin: auto;
 }
 .main-content {
     margin-top: 340px;
+    margin-bottom: 50px;
+}
+h1 {
+    font-family: 'Prata', serif;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.main-text h2 {
+    font-size: 50px;
+    margin-bottom: 66px;
+}
+.main-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-bottom: 40px;
+}
+.main-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-numbers {
+    font-family: 'Prata', serif;
+    font-size: 40px;
+}
+.main-span {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+.main-button {
+    width: 191px;
+    height: 96px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #222222;       
+    text-align: center;
+    border-radius: 4px;
+}
+.image-block {
+    max-width: 763px;
+    overflow: hidden;
+}
+.image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.advantages {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.advantages-container {
+    max-width: 1920px;
+    min-height: 723px;         
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.advantages-image {
+    width: calc((100% - 60px) / 3);    
+    overflow: hidden;
+}
+.advantages-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.advantages-content {
+    width: calc((100% - 106px) / 3);
+    padding: 53px 53px 0 53px;
+}
+.advantages-content ul {
+    margin-bottom: 80px;
+}
+.advantages-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 0;
+}
+.advantages-item span {
+    font-family: Arial, sans-serif;
+    line-height: 120%;
+    font-size: 24px;
+}
+.advantages-button {
+    width: 100%;
+    height: 78px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #222222;
+    text-align: center;
+    border-radius: 4px;
 }
