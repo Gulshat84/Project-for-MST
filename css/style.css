@@ -149,6 +149,25 @@ nav {
     margin-right: 165px;
     align-self: center;
 }
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+.header-menu {
+    height: 18px;
+    background-color: inherit; 
+    display: none;    
+}
+.header-line {
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+.menu-overlay {
+    display: none;
+}
+
+.menu-overlay
 
 .main {
     background-color: #222222;
@@ -162,7 +181,7 @@ nav {
 }
 .main-content {
     margin-top: 340px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 h1 {
     font-family: 'Prata', serif;
@@ -270,16 +289,17 @@ h1 {
 .form-container {
     max-width: 1597px;
     min-height: 628px;
-    display: flex;
+    display: flex;    
+    gap: 50px;
     align-items: center;
     justify-content: space-between;
     margin: auto;
     background-color: #fff;
     border-radius: 30px;
+    overflow: hidden;
 }
 .form-contacts {
-    max-width: 781px;
-    margin-left: 134px;
+    max-width: 781px;    
     display: flex;
     flex-direction: column;
     margin: 72px 0 72px 134px;
@@ -361,12 +381,16 @@ input {
 }
 .footer-menu {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     gap: 60px;
     margin: auto;    
 }
 .footer-top {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;    
     margin-bottom: 38px;
@@ -390,6 +414,8 @@ input {
 }
 .footer-bottom {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -408,3 +434,200 @@ input {
     font-size: 20px;
     color: #D5C9BE;
 }
+
+@media (max-width: 1728px) {
+    .header-container {
+        align-items: center;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 120px;        
+    }
+    .header nav {
+        margin-left: 130px;
+    }
+    .logo {
+        width: 80px;
+        height: 15px;
+        margin: 0;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .main-container {
+        min-height: 700px;
+    }
+    .main-content {
+        max-width: 800px;
+        padding-left: 5%;
+    }
+    .main-text h2 {            
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .main-numbers {            
+        font-size: 26px;
+    }    
+    .main-span {            
+        font-size: 16px;
+    }    
+    .main-button {
+        width: 120px;
+        height: 66px;            
+        font-size: 16px;            
+    }
+    
+    .advantages-container {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .advantages-image {
+        width: 100%;
+    }
+    .advantages-content {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+    .advantages-item span {
+        font-size: 14px;
+    }
+    .advantages-button {
+        font-size: 14px;
+    }
+    .form-container {        
+        margin-left: 5%;
+        margin-right: 5%;
+        min-height: 400px;
+    }
+    .form-content {
+        padding-left: 5%;
+        margin-top: 50px;
+    }
+    .form-contacts {
+        max-width: 500px;;                
+        margin: 0 30px;
+    }
+    .form-title {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    
+    
+    input {            
+        height: 40px;            
+        padding-left: 20px;
+    }
+    
+    .form-name {            
+        font-size: 14px;
+    }
+    
+    .form-email {            
+        font-size: 14px;
+    }
+    .form-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+    .form-contacts span {
+        font-size: 14px;
+    }
+    .form-image {
+        height: 100%;
+    }
+    .form-agreement {
+        margin-bottom: 10px;
+    }
+    .form-button {
+        font-size: 14px;
+        height: 50px;
+    }
+    .footer-container {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .footer-link {
+        width: 16px;
+        height: 16px;
+    }
+    .footer-button {
+        height: 60px;
+        font-size: 14px;
+    }
+    .footer-span {            
+        font-size: 14px;           
+    }
+    
+    .footer-privacy {
+        font-size: 14px;
+    }
+    
+    .footer-terms {            
+        font-size: 14px;            
+    }
+}
+@media (max-width: 1280px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+    .image-block {
+        display: none;
+    }
+    .main-content {
+        margin-top: 240px;            
+    }        
+
+}
+@media (max-width: 940px) {
+        
+    h1 {
+        max-width: 500px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .main-text h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }        
+    .main-numbers {
+        font-size: 20px;
+    }        
+    .main-span {
+        font-size: 14px;
+    }
+    .form-container {
+        flex-wrap: wrap;            
+    }
+    .form-contacts {
+        width: 100%;
+        margin: 0;
+        padding: 0 5%;            
+    }
+    .form-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-menu {        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }            
+}
+    
