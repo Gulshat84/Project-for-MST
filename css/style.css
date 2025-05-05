@@ -243,12 +243,15 @@ h1 {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 40px 0;
+    padding: 40px 0;       
 }
 .advantages-item span {
     font-family: Arial, sans-serif;
     line-height: 120%;
     font-size: 24px;
+}
+.advantages-line {
+    border-top: 2px solid #55565A;
 }
 .advantages-button {
     width: 100%;
@@ -343,4 +346,65 @@ input {
     font-size: 24px;
     color: #FFFFFF;
     background-color: #282829;
+}
+.footer-line {
+    border-top: 2px solid #D5C9BE;
+}
+.footer-container {
+    max-width: 1920px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 60px 0;
+    
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: auto;    
+}
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin-bottom: 38px;
+}
+.footer-socials {
+    display: flex;
+    gap: 33px;
+}
+.footer-link {
+    width: 32px;
+    height: 32px;
+}
+.footer-button {
+    width: 180px;
+    height: 78px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-span {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.footer-privacy {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #D5C9BE;
+}
+.footer-terms {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #D5C9BE;
 }
